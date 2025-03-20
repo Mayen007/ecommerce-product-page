@@ -13,48 +13,64 @@
 
 </head>
 
-<body>
-  <nav class="navbar">
-    <img src="./assets/images/logo.svg" alt="Brand logo">
-    <ul>
-      <li><a href="#">Collections</a></li>
-      <li><a href="#">Men</a></li>
-      <li><a href="#">Women</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <ul>
-      <li><a href="#"><img src="./assets/images/icon-cart.svg" alt="Cart"></a></li>
-      <li><a href="#"><img src="./assets/images/image-avatar.png" alt="Avatar"></a></li>
-    </ul>
+<body class="h-100">
+  <nav class="navbar navbar-expand-lg bg-body-light align-items-center d-flex">
+    <div class="container">
+      <a href="index.html" class="navbar-brand" aria-current="page"><img src="./assets/images/logo.svg" alt="Brand logo"
+          class="brand-img"></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <img src="./assets/images/icon-menu.svg" alt="">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item"><a href="#" class="nav-link">Collections</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Men</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Women</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+        <ul class="navbar-nav d-flex justify-content-end align-items-center">
+          <li class="nav-item"><a href="#" class="nav-link"><img src="./assets/images/icon-cart.svg" alt="Cart"
+                class="img-fluid cart-img"></a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link"><img src="./assets/images/image-avatar.png" alt="Avatar"
+                class="img-fluid avatar-img"></a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
-  <main class="container">
+  <main class="container w-75">
     <section class="row">
       <!-- Image col -->
-      <div class="col">
+      <div class="col-6">
         <div>
-          <img src="./assets/images/image-product-1.jpg" alt="" class="img-fluid">
+          <img src="./assets/images/image-product-1.jpg" alt="" class="img-fluid main-image mb-3">
           <div class="thumbnails">
-            <img src="./assets/images/image-product-1-thumbnail.jpg" alt="Thumbnail 1">
-            <img src="./assets/images/image-product-2-thumbnail.jpg" alt="Thumbnail 2">
-            <img src="./assets/images/image-product-3-thumbnail.jpg" alt="Thumbnail 3">
-            <img src="./assets/images/image-product-4-thumbnail.jpg" alt="Thumbnail 4">
+            <img src="./assets/images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" class="img-fluid thumbnail-img">
+            <img src="./assets/images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" class="img-fluid thumbnail-img">
+            <img src="./assets/images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" class="img-fluid thumbnail-img">
+            <img src="./assets/images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" class="img-fluid thumbnail-img">
           </div>
         </div>
       </div>
 
       <!-- Text col -->
-      <div class="col">
+      <div class="col-6">
         <h1 class="brand-name">Sneaker Company</h1>
         <h2 class="subheading">Fall Limited Edition Sneakers</h2>
         <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a
           durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
         <div class="price-box">
-          <p class="new-price">$125.00</p>
-          <p class="discount">50%</p>
+          <div class="newprice-box">
+            <p class="new-price">$125.00</p>
+            <p class="discount">50%</p>
+          </div>
           <p class="old-price">$250.00</p>
         </div>
-        <div class="buy">
+        <div class="buy-cont">
           <div class="add-to-cart">
             <a href="#"><img src="./assets/images/icon-minus.svg" alt="Minus sign"></a>
             <p class="value" id="value">0</p>
