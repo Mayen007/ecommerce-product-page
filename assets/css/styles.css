@@ -1,5 +1,3 @@
-@import url();
-
 :root {
   /* Primary colors */
   --primary-orange: hsl(26, 100%, 55%);
@@ -48,15 +46,28 @@ body {
   font-weight: 400;
 }
 
-.brand-img {
-  width: 100%;
-  height: auto;
+.menu-btn {
+  width: auto;
+  /* height: auto; */
+}
+
+.brand-img:hover {
+  /* width: 100%; */
+  /* height: auto; */
+  border-color: var(--primary-orange);
+}
+
+.sec-nav {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
 }
 
 .cart-img {
   width: 20px;
-  height: 20px;
-  margin-right: 0.8rem;
+  height: auto;
+  /* margin-right: 0.8rem; */
+  object-fit: cover;
 }
 
 .avatar-img {
@@ -170,6 +181,12 @@ p {
   font-size: var(--font-size-s);
 }
 
+.value {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--neutral-very-dark-blue);
+}
+
 .add-to-cart-btn {
   display: flex;
   width: 50%;
@@ -183,7 +200,13 @@ p {
   font-family: 'kumbhsans-700', sans-serif;
   font-weight: 700;
   font-size: var(--font-size-s);
+  transition: all 0.3s;
   cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: var(--primary-orange);
+  opacity: 0.5;
 }
 
 .add-to-cart-btn img {

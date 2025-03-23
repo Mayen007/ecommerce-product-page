@@ -13,37 +13,47 @@
 
 </head>
 
-<body class="h-100">
-  <nav class="navbar navbar-expand-lg bg-body-light align-items-center d-flex">
+<body class="">
+  <nav class="navbar navbar-expand-lg bg-body-light mb-4 py-3 align-items-center d-flex">
     <div class="container">
-      <a href="index.html" class="navbar-brand" aria-current="page"><img src="./assets/images/logo.svg" alt="Brand logo"
-          class="brand-img"></a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
-        <img src="./assets/images/icon-menu.svg" alt="">
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
-          <li class="nav-item"><a href="#" class="nav-link">Collections</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Men</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Women</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-        </ul>
-        <ul class="navbar-nav d-flex justify-content-end align-items-center">
-          <li class="nav-item"><a href="#" class="nav-link"><img src="./assets/images/icon-cart.svg" alt="Cart"
-                class="img-fluid cart-img"></a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link"><img src="./assets/images/image-avatar.png" alt="Avatar"
-                class="img-fluid avatar-img"></a></li>
-        </ul>
+      <div class="d-flex align-items-center gx-0">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <img src="./assets/images/icon-menu.svg" alt="" class="menu-btn img-fluid">
+        </button>
+        <a href="index.html" class="navbar-brand" aria-current="page"><img src="./assets/images/logo.svg"
+            alt="Brand logo" class="img-fluid brand-img"></a>
       </div>
+      <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+          <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="./assets/images/icon-close.svg" alt="">
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item"><a href="#" class="nav-link">Collections</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Men</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Women</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="sec-nav">
+        <li class="nav-item"><a href="#" class="nav-link"><img src="./assets/images/icon-cart.svg" alt="Cart"
+              class="img-fluid cart-img"></a>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="./assets/images/image-avatar.png" alt="Avatar"
+              class="img-fluid avatar-img"></a></li>
+      </ul>
     </div>
   </nav>
   <main class="container w-75">
-    <section class="row">
+    <section class="row gx-5 align-items-center">
       <!-- Image col -->
       <div class="col-6">
         <div>
