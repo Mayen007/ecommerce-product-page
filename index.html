@@ -13,28 +13,27 @@
 
 </head>
 
-<body class="">
-  <nav class="navbar navbar-expand-lg bg-body-light mb-4 py-3 align-items-center d-flex">
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-ligh py-2 border">
     <div class="container">
       <div class="d-flex align-items-center gx-0">
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" aria-expanded="false"
           aria-label="Toggle navigation">
-          <!-- <span class="navbar-toggler-icon"></span> -->
-          <img src="./assets/images/icon-menu.svg" alt="" class="menu-btn img-fluid">
+          <img src="./assets/images/icon-menu.svg" alt="" class="menu-btn">
         </button>
         <a href="index.html" class="navbar-brand" aria-current="page"><img src="./assets/images/logo.svg"
-            alt="Brand logo" class="img-fluid brand-img"></a>
+            alt="Brand logo" class="brand-img"></a>
       </div>
       <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
         aria-labelledby="staticBackdropLabel">
         <div class="offcanvas-header">
-          <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+          <button type="button" class="navbar-toggler border-0" data-bs-dismiss="offcanvas" aria-label="Close">
             <img src="./assets/images/icon-close.svg" alt="">
           </button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-start">
             <li class="nav-item"><a href="#" class="nav-link">Collections</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Men</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Women</a></li>
@@ -43,19 +42,19 @@
           </ul>
         </div>
       </div>
-      <ul class="sec-nav">
+      <ul class="sec-nav d-flex align-items-center gap-3 mb-0">
         <li class="nav-item"><a href="#" class="nav-link"><img src="./assets/images/icon-cart.svg" alt="Cart"
-              class="img-fluid cart-img"></a>
+              class="cart-img"></a>
         </li>
         <li class="nav-item"><a href="#" class="nav-link"><img src="./assets/images/image-avatar.png" alt="Avatar"
-              class="img-fluid avatar-img"></a></li>
+              class="avatar-img"></a></li>
       </ul>
     </div>
   </nav>
-  <main class="container w-75">
-    <section class="row gx-5 align-items-center">
+  <main class="container mt-4">
+    <section class="row gx-lg-5 align-items-center hero">
       <!-- Image col -->
-      <div class="col-6">
+      <div class="col-md-6 mb-4 img-col">
         <div>
           <img src="./assets/images/image-product-1.jpg" alt="" class="img-fluid main-image mb-3">
           <div class="thumbnails">
@@ -68,9 +67,9 @@
       </div>
 
       <!-- Text col -->
-      <div class="col-6">
+      <div class="col-md-6 text-col">
         <h1 class="brand-name">Sneaker Company</h1>
-        <h2 class="subheading">Fall Limited Edition Sneakers</h2>
+        <h2 class="subheading mb-4">Fall Limited Edition Sneakers</h2>
         <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a
           durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
         <div class="price-box">
